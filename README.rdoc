@@ -4,6 +4,8 @@
 
 == Configuration
 
+    * Gemfile : gem "cuke-step-bm" # after gem "cucumber"
+
     * config/cuke_step_bm.rb  or  ~/.cuke_step_bm
 
       output_mode:
