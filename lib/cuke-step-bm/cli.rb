@@ -33,11 +33,11 @@ module CukeStepBm
             options[:act] = [ :within, [from_to.first, from_to.last] ]
           end
 
-          opts.on("-l", "--less VALUE", Float, "Show the steps time-consuming less than or equal the given") do |v|
+          opts.on("-l", "--less VALUE", Float, "Show the steps time-consuming less than or equal the given(Mean value)") do |v|
             options[:act] = [ :less, v ]
           end
 
-          opts.on("-m", "--more VALUE", Float, "Show the steps time-consuming more than or equal the given") do |v|
+          opts.on("-m", "--more VALUE", Float, "Show the steps time-consuming more than or equal the given(Mean value)") do |v|
             options[:act] = [ :more, v ]
           end
 
