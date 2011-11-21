@@ -4,6 +4,8 @@
 
 == Configuration
 
+    * require : cucumber >= "1.1.1"
+
     * Gemfile : gem "cuke-step-bm" # after gem "cucumber"
 
     * config/cuke_step_bm.rb  or  ./.cuke_step_bm or $HOME/.cuke_step_bm"
