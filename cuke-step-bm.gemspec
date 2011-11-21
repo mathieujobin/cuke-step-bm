@@ -1,9 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
+require "version"
 
 Gem::Specification.new do |s|
   s.name        = "cuke-step-bm"
-  s.version     = "1.0.0"
+  s.version     = CukeStepBm::VERSION
   s.authors     = ["elvuel"]
   s.email       = ["elvuel@gmail.com"]
   s.homepage    = "https://github.com/elvuel"
