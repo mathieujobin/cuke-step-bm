@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "version"
+require "cuke-step-bm/version"
 
 Gem::Specification.new do |s|
   s.name        = "cuke-step-bm"
