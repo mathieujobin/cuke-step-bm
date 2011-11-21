@@ -6,7 +6,7 @@
 
     * Gemfile : gem "cuke-step-bm" # after gem "cucumber"
 
-    * config/cuke_step_bm.rb  or  ~/.cuke_step_bm
+    * config/cuke_step_bm.rb  or  ./.cuke_step_bm or $HOME/.cuke_step_bm"
 
       output_mode:
         # :bm => BenchMark(only for display)
@@ -28,7 +28,6 @@
 == TodoList Working in process
 
     * add spec test
-    * add pp
     * add color
     * refator for something
     * ..

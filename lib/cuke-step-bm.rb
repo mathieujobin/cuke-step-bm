@@ -3,8 +3,6 @@ require "cuke-step-bm/cli"
 
 module CukeStepBm
   # cuke_step_bm bm-cuke-step cuke-step-bm.rb
-  VERSION = "0.0.1".freeze
-
   # :bm => BenchMark(only for display)
   # :std => SimpleTimeDiff
   # :std_with_log => SimpleTimeDiff log
@@ -23,7 +21,8 @@ module CukeStepBm
       use_defaults!
       paths = [
           File.expand_path("config/cuke_step_bm.rb", root),
-          File.expand_path(".cuke_step_bm", root)
+          File.expand_path(".cuke_step_bm", root),
+          "#{ENV["HOME"]}/.cuke_step_bm"
       ]
       paths.each { |path| load(path) if File.exist?(path) }
       self.output_mode = :std unless BM_SUPPORTED_OUTPUT_MODES.include? output_mode
