@@ -103,7 +103,7 @@ if defined?(Cucumber) && defined?(Cucumber::VERSION) && (Cucumber::VERSION >= "1
               CukeStepBm.write_to_log time_consuming_message
             else
               puts time_for_output
-            end
+            end if time_end - time_begin > 1
           end
         end # invoke
 
